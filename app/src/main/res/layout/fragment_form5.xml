@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightGray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Step 5 (Survey Form Submit Page`)"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/name_nominee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:text="Survey Submitted"
+            android:padding="@dimen/default_padding_top"
+            android:fontFamily="@font/sfpro_medium"
+            android:textCursorDrawable="@drawable/text_cursor_cyan"
+            android:textSize="16sp"
+           />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="@color/colorBlack"
+            android:text="1. Vendor Name"
+            android:id="@+id/surveySubmission_name"
+            android:padding="@dimen/default_padding_top"
+            android:fontFamily="@font/sfpro_medium"
+            android:textCursorDrawable="@drawable/text_cursor_cyan"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="@color/colorBlack"
+            android:text="2. Registration no: (DELVEN001,2,3)"
+            android:id="@+id/surveySubmission_registration"
+            android:padding="@dimen/default_padding_top"
+            android:fontFamily="@font/sfpro_medium"
+            android:textCursorDrawable="@drawable/text_cursor_cyan"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="@color/colorBlack"
+            android:text="3. Payment : Done"
+            android:padding="@dimen/default_padding_top"
+            android:fontFamily="@font/sfpro_medium"
+            android:textCursorDrawable="@drawable/text_cursor_cyan"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:id="@+id/home_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="@dimen/default_padding_top"
+            android:fontFamily="@font/sfpro_medium"
+            android:text="4. Profile Photo"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/fragment_userDp"
+                android:layout_width="170dp"
+                android:layout_height="200dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/black_background"
+                android:clickable="true"
+                android:padding="5dp"
+                app:srcCompat="@drawable/user_defaultbio" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

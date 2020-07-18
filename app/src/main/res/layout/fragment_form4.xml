@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightGray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Step 4 (Photo and Payment)"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/home_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/sfpro_medium"
+            android:text="Take a photo of the vendor"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/fragment_userDp"
+                android:layout_width="150dp"
+                android:layout_height="170dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/black_background"
+                android:clickable="true"
+                android:padding="1dp"
+                app:srcCompat="@drawable/user_defaultbio" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/sfpro_medium"
+            android:text=" Take a photo of the vending stall"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/vendor_stall_pic"
+                android:layout_width="150dp"
+                android:layout_height="170dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/black_background"
+                android:clickable="true"
+                android:padding="1dp"
+                app:srcCompat="@drawable/user_defaultbio" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/sfpro_medium"
+                android:text="Do you have any of these?"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/proof_option"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/ration_options"
+                android:fontFamily="@font/sfpro_medium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linlay_idcard"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/sfpro_medium"
+                android:text="ID Card Photo"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp">
+
+                <ImageView
+                    android:id="@+id/id_card_pic"
+                    android:layout_width="150dp"
+                    android:layout_height="170dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/black_background"
+                    android:clickable="true"
+                    android:padding="1dp"
+                    app:srcCompat="@drawable/user_defaultbio" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/sfpro_medium"
+                android:text="License or challan"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/licenseOrchallan"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/abledOptions"
+                android:fontFamily="@font/sfpro_medium" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linlay_licenseorchallan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/license_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/black_background"
+                android:fontFamily="@font/sfpro_medium"
+                android:hint="License No"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:textCursorDrawable="@drawable/text_cursor_cyan"
+                android:textSize="16sp"
+                android:visibility="visible"
+                app:met_baseColor="@color/colorBlack"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="?attr/colorAccent"
+                app:met_textColorHint="@color/colorBlack" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/sfpro_medium"
+                    android:text="Take License picture"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/license_pic"
+                    android:layout_width="150dp"
+                    android:layout_height="170dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/black_background"
+                    android:clickable="true"
+                    android:padding="1dp"
+                    app:srcCompat="@drawable/user_defaultbio" />
+            </LinearLayout>
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/challan_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/black_background"
+                android:fontFamily="@font/sfpro_medium"
+                android:hint="Challan No"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:textCursorDrawable="@drawable/text_cursor_cyan"
+                android:textSize="16sp"
+                android:visibility="visible"
+                app:met_baseColor="@color/colorBlack"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="?attr/colorAccent"
+                app:met_textColorHint="@color/colorBlack" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/sfpro_medium"
+                    android:text="Take Challan picture"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/challan_pic"
+                    android:layout_width="150dp"
+                    android:layout_height="170dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/black_background"
+                    android:clickable="true"
+                    android:padding="1dp"
+                    app:srcCompat="@drawable/user_defaultbio" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/sfpro_medium"
+                android:text="Amount collection in :"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <ImageView
+                    android:id="@+id/frag4_iv_cash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/black_background"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    app:srcCompat="@drawable/iconfinder_cash_receiving" />
+
+                <ImageView
+                    android:id="@+id/frag4_iv_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/black_background"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    app:srcCompat="@drawable/iconfinder_credit_card" />
+
+                <ImageView
+                    android:id="@+id/frag4_iv_wallet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/black_background"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    app:srcCompat="@drawable/iconfinder_wallet" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/amount_earned"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/black_background"
+            android:fontFamily="@font/sfpro_medium"
+            android:hint="Total cash collected"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:textCursorDrawable="@drawable/text_cursor_cyan"
+            android:textSize="16sp"
+            android:visibility="gone"
+            app:met_baseColor="@color/colorBlack"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="?attr/colorAccent"
+            app:met_textColorHint="@color/colorBlack" />
+
+        <Button
+            android:id="@+id/form_bt_next"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="bottom|center_vertical|center_horizontal|center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/green_background_rounded"
+            android:gravity="center"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp" />
+    </LinearLayout>
+</ScrollView>

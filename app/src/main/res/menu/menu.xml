@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/today_cash" android:title="@string/today_cash_collected"/>
+    <item android:id="@+id/total_cash" android:title="@string/total_cash_collected"/>
+    <item android:id="@+id/todays_vendor" android:title="@string/today_s_vendor_registration"/>
+    <item android:id="@+id/total_vendor" android:title="@string/total_vendor_registration"/>
+    <item android:id="@+id/my_profile" android:title="My profile "/>
+    <item android:id="@+id/edit_profile" android:title="Edit profile "/>
+    <item android:id="@+id/change_password" android:title="Change password "/>
+    <item android:id="@+id/logout" android:title="Logout"/>
+</menu>

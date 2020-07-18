@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorLightGray">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/app_logo" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorLightGray"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:id="@+id/linlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/sfpro_semibold"
+                android:gravity="center"
+                android:text="User Registration"
+                android:textColor="@color/colorBlack"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/login_linlay_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linlay"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/activity_UserLoginEt_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/white_background"
+                android:fontFamily="@font/sfpro_medium"
+                android:gravity="center_vertical"
+                android:hint="Name"
+                android:maxLength="15"
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:textColorHint="@color/colorLightGreen"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/activity_UserLoginEt_emailId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/white_background"
+                android:fontFamily="@font/sfpro_medium"
+                android:gravity="center_vertical"
+                android:hint="Email Id"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:textColorHint="@color/colorLightGreen"
+                android:textSize="16sp" />
+            <EditText
+                android:id="@+id/activity_UserLoginEt_mobileNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/white_background"
+                android:fontFamily="@font/sfpro_medium"
+                android:gravity="center_vertical"
+                android:hint="Mobile No."
+                android:inputType="number"
+                android:maxLength="15"
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:textColorHint="@color/colorLightGreen"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/userlogin_bt_otp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:padding="15dp"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/green_background_rounded"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="generate otp"
+                android:layout_below="@+id/login_linlay_id"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/activity_UserLoginEt_otp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/white_background"
+                android:fontFamily="@font/sfpro_medium"
+                android:gravity="center_vertical"
+                android:hint="Enter Otp"
+                android:inputType="number"
+                android:maxLength="15"
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:textColorHint="@color/colorLightGreen"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/userlogin_bt_signin"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/green_background_rounded"
+            android:gravity="center"
+            android:text="Submit"
+            android:layout_below="@+id/login_linlay_id"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp" />
+    </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

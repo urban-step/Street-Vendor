@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightGreen"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:id="@+id/name_nominee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:text="Congratulations!"
+            android:padding="@dimen/default_padding_top"
+            android:fontFamily="@font/sfpro_semibold"
+            android:textCursorDrawable="@drawable/text_cursor_cyan"
+            android:textSize="27sp"
+           />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="@color/colorBlack"
+            android:text="You are Registered, your Registration no: (DELVEN001,2,3)"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/vendor_Succesful_registration"
+            android:padding="@dimen/default_padding_top"
+            android:fontFamily="@font/sfpro_semibold"
+            android:textCursorDrawable="@drawable/text_cursor_cyan"
+            android:textSize="26sp"
+            />
+
+        <Button
+            android:id="@+id/vendor_succesful_next"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="bottom|center_vertical|center_horizontal|center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/green_background_rounded"
+            android:gravity="center"
+            android:text="Next/आगे"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="19sp" />
+
+    </LinearLayout>
+</ScrollView>

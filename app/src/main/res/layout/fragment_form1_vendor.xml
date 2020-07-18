@@ -1,0 +1,707 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightGray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/registration_vendor_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/black_background"
+            android:fontFamily="@font/sfpro_medium"
+            android:hint="Name of Vendor/विक्रेता का नाम "
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:textCursorDrawable="@drawable/text_cursor_cyan"
+            android:textSize="16sp"
+            app:met_baseColor="@color/colorBlack"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="?attr/colorAccent"
+            app:met_textColorHint="@color/colorBlack" />
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/registration_adhar_Card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/black_background"
+            android:fontFamily="@font/sfpro_medium"
+            android:hint="Adhaar Card No./आधार कार्ड नं"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:textCursorDrawable="@drawable/text_cursor_cyan"
+            android:textSize="16sp"
+            app:met_baseColor="@color/colorBlack"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="?attr/colorAccent"
+            app:met_textColorHint="@color/colorBlack" />
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/registration_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/black_background"
+            android:fontFamily="@font/sfpro_medium"
+            android:hint="Age of vendor/उम्र"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:textCursorDrawable="@drawable/text_cursor_cyan"
+            android:textSize="16sp"
+            app:met_baseColor="@color/colorBlack"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="?attr/colorAccent"
+            app:met_textColorHint="@color/colorBlack" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Home Address/घर का पता"
+                android:fontFamily="@font/sfpro_semibold"
+                android:textSize="16sp"
+                android:textColor="@color/colorBlack" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="House no./माकन नंबर"
+                    android:id="@+id/registration_home_houseno"
+                    android:textCursorDrawable="@drawable/text_cursor_cyan"
+                    app:met_baseColor="@color/colorBlack"
+                    app:met_floatingLabel="highlight"
+                    android:textSize="16sp"
+                    android:imeOptions="actionNext"
+                    android:fontFamily="@font/sfpro_medium"
+                    android:background="@drawable/black_background"
+                    android:layout_margin="10dp"
+                    app:met_textColorHint="@color/colorBlack"
+                    app:met_primaryColor="?colorAccent" />
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Locality/इलाका"
+                    android:id="@+id/registration_home_locality"
+                    android:textCursorDrawable="@drawable/text_cursor_cyan"
+                    app:met_baseColor="@color/colorBlack"
+                    app:met_floatingLabel="highlight"
+                    android:textSize="16sp"
+                    android:imeOptions="actionNext"
+                    android:fontFamily="@font/sfpro_medium"
+                    android:background="@drawable/black_background"
+                    android:layout_margin="10dp"
+                    app:met_textColorHint="@color/colorBlack"
+                    app:met_primaryColor="?colorAccent" />
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Ward/Zone/वार्ड नं"
+                    android:id="@+id/registration_home_wardzone"
+                    android:textCursorDrawable="@drawable/text_cursor_cyan"
+                    app:met_baseColor="@color/colorBlack"
+                    app:met_floatingLabel="highlight"
+                    android:textSize="16sp"
+                    android:imeOptions="actionNext"
+                    android:fontFamily="@font/sfpro_medium"
+                    android:background="@drawable/black_background"
+                    android:layout_margin="10dp"
+                    app:met_textColorHint="@color/colorBlack"
+                    app:met_primaryColor="?colorAccent" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/sfpro_medium"
+                        android:text="State/राज्य"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16sp" />
+
+                    <Spinner
+                        android:id="@+id/registration_home_state"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:drawSelectorOnTop="true"
+                        android:fontFamily="@font/sfpro_medium" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/sfpro_medium"
+                        android:text="City/शहर"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16sp" />
+
+                    <Spinner
+                        android:id="@+id/registration_home_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:drawSelectorOnTop="true"
+                        android:fontFamily="@font/sfpro_medium" />
+                </LinearLayout>
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Pin Code/पिन कोड"
+                    android:id="@+id/registration_home_pincode"
+                    android:textCursorDrawable="@drawable/text_cursor_cyan"
+                    app:met_baseColor="@color/colorBlack"
+                    app:met_floatingLabel="highlight"
+                    android:textSize="16sp"
+                    android:inputType="number"
+                    android:imeOptions="actionNext"
+                    android:fontFamily="@font/sfpro_medium"
+                    android:background="@drawable/black_background"
+                    android:layout_margin="10dp"
+                    app:met_textColorHint="@color/colorBlack"
+                    app:met_primaryColor="?colorAccent" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/registration_vendor_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/black_background"
+            android:fontFamily="@font/sfpro_medium"
+            android:hint="Vendor Mobile No/मोबाइल न"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:textCursorDrawable="@drawable/text_cursor_cyan"
+            android:textSize="16sp"
+            app:met_baseColor="@color/colorBlack"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="?attr/colorAccent"
+            app:met_textColorHint="@color/colorBlack" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Location Of Vending/वेंडिंग का स्थान"
+                android:fontFamily="@font/sfpro_semibold"
+                android:textSize="16sp"
+                android:textColor="@color/colorBlack" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Landmark/माकन नंबर"
+                    android:id="@+id/registration_houseno"
+                    android:textCursorDrawable="@drawable/text_cursor_cyan"
+                    app:met_baseColor="@color/colorBlack"
+                    app:met_floatingLabel="highlight"
+                    android:textSize="16sp"
+                    android:imeOptions="actionNext"
+                    android:fontFamily="@font/sfpro_medium"
+                    android:background="@drawable/black_background"
+                    android:layout_margin="10dp"
+                    app:met_textColorHint="@color/colorBlack"
+                    app:met_primaryColor="?colorAccent" />
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Locality/इलाका"
+                    android:id="@+id/registration_locality"
+                    android:textCursorDrawable="@drawable/text_cursor_cyan"
+                    app:met_baseColor="@color/colorBlack"
+                    app:met_floatingLabel="highlight"
+                    android:textSize="16sp"
+                    android:imeOptions="actionNext"
+                    android:fontFamily="@font/sfpro_medium"
+                    android:background="@drawable/black_background"
+                    android:layout_margin="10dp"
+                    app:met_textColorHint="@color/colorBlack"
+                    app:met_primaryColor="?colorAccent" />
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Ward/Zone/वार्ड नं"
+                    android:id="@+id/registration_wardzone"
+                    android:textCursorDrawable="@drawable/text_cursor_cyan"
+                    app:met_baseColor="@color/colorBlack"
+                    app:met_floatingLabel="highlight"
+                    android:textSize="16sp"
+                    android:imeOptions="actionNext"
+                    android:fontFamily="@font/sfpro_medium"
+                    android:background="@drawable/black_background"
+                    android:layout_margin="10dp"
+                    app:met_textColorHint="@color/colorBlack"
+                    app:met_primaryColor="?colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/sfpro_medium"
+                        android:text="State/राज्य"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16sp" />
+
+                    <Spinner
+                        android:id="@+id/registration_state"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:drawSelectorOnTop="true"
+                        android:fontFamily="@font/sfpro_medium" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/sfpro_medium"
+                        android:text="City/शहर"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16sp" />
+
+                    <Spinner
+                        android:id="@+id/registration_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:drawSelectorOnTop="true"
+                        android:fontFamily="@font/sfpro_medium" />
+                </LinearLayout>
+
+
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Pin Code/पिन कोड"
+                    android:id="@+id/registration_pincode"
+                    android:inputType="number"
+                    android:textCursorDrawable="@drawable/text_cursor_cyan"
+                    app:met_baseColor="@color/colorBlack"
+                    app:met_floatingLabel="highlight"
+                    android:textSize="16sp"
+                    android:imeOptions="actionNext"
+                    android:fontFamily="@font/sfpro_medium"
+                    android:background="@drawable/black_background"
+                    android:layout_margin="10dp"
+                    app:met_textColorHint="@color/colorBlack"
+                    app:met_primaryColor="?colorAccent" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Location of Vending/(वेंडिंग का स्थान, अक्षांश और देशांतर)"
+                    android:id="@+id/registration_locationOfVendingGps"
+                    android:textCursorDrawable="@drawable/text_cursor_cyan"
+                    app:met_baseColor="@color/colorBlack"
+                    app:met_floatingLabel="highlight"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorBlack"
+                    android:imeOptions="actionNext"
+                    android:drawableRight="@drawable/gps"
+                    android:fontFamily="@font/sfpro_medium"
+                    android:background="@drawable/black_background"
+                    android:layout_margin="10dp"
+                    app:met_textColorHint="@color/colorBlack"
+                    app:met_primaryColor="?colorAccent" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/sfpro_medium"
+                android:text="Accepted Modes Of Payment/भुगतान के स्वीकृत मोड"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <ImageView
+                    android:id="@+id/frag4_iv_cash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/black_background"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    app:srcCompat="@drawable/iconfinder_cash_receiving" />
+
+                <ImageView
+                    android:id="@+id/frag4_iv_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/black_background"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    app:srcCompat="@drawable/iconfinder_credit_card" />
+
+                <ImageView
+                    android:id="@+id/frag4_iv_wallet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/black_background"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    app:srcCompat="@drawable/iconfinder_wallet" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/sfpro_medium"
+                android:text="Type of Commodity Sold which the vendor sells (Select from the list below)/विक्रेता बेचता है (नीचे दी गई सूची में से चुनें)"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp" />
+            <GridView
+                android:id="@+id/registration_activitySp_commodity"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="4"
+                android:horizontalSpacing="10dp"
+                android:verticalSpacing="10dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center">
+
+            </GridView>
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/sfpro_medium"
+                android:text="Timming of Vending/वेंडिंग का समय"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/registration_checkBox_6am"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/sfpro_regular"
+                android:text="6am - 9am"
+                android:textSize="15sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/registration_linlay_nature_6am"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="15dp"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/sfpro_medium"
+                    android:text="Nature of Vending/वेंडिंग की प्रकृति"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp" />
+
+                <com.multispinner.MultiSelectSpinner
+                    android:id="@+id/registration_activitySp_nature_6am"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    />
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/registration_checkBox_9am"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/sfpro_regular"
+                android:text="9am - 12pm"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/registration_linlay_nature_9am"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="15dp"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/sfpro_medium"
+                    android:text="Nature of Vending/वेंडिंग की प्रकृति"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp" />
+
+                <com.multispinner.MultiSelectSpinner
+                    android:id="@+id/registration_activitySp_nature_9am"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    />
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/registration_checkBox_12pm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/sfpro_regular"
+                android:text="12pm - 3pm"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/registration_linlay_nature_12pm"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="15dp"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/sfpro_medium"
+                    android:text="Nature of Vending/वेंडिंग की प्रकृति"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp" />
+
+                <com.multispinner.MultiSelectSpinner
+                    android:id="@+id/registration_activitySp_nature_12pm"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    />
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/registration_checkBox_3pm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/sfpro_regular"
+                android:text="3pm - 6pm"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/registration_linlay_nature_3pm"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="15dp"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/sfpro_medium"
+                    android:text="Nature of Vending/वेंडिंग की प्रकृति"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp" />
+
+                <com.multispinner.MultiSelectSpinner
+                    android:id="@+id/registration_activitySp_nature_3pm"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+
+                    />
+            </LinearLayout>
+            <CheckBox
+                android:id="@+id/registration_checkBox_6pm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/sfpro_regular"
+                android:text="6pm - 9pm"
+                android:textSize="15sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/registration_linlay_nature_6pm"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="15dp"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/sfpro_medium"
+                    android:text="Nature of Vending/वेंडिंग की प्रकृति"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp" />
+
+                <com.multispinner.MultiSelectSpinner
+                    android:id="@+id/registration_activitySp_nature_6pm"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:drawSelectorOnTop="true"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/sfpro_medium"
+            android:text="Take a photo of the shop/दुकान की एक तस्वीर लीजिये"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+            <ImageView
+                android:id="@+id/registeration_vendor_stall_pic"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/black_background"
+                android:clickable="true"
+                android:padding="1dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/placeholder" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/form_bt_next"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="bottom|center_vertical|center_horizontal|center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/green_background_rounded"
+            android:gravity="center"
+            android:text="Submit/आगे"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp" />
+    </LinearLayout>
+</ScrollView>

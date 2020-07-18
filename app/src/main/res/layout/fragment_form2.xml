@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightGray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Step 2 (Socio-Economic Information)"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/sfpro_medium"
+                android:text="Daily income"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/daily_income"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/daily_income"
+                android:fontFamily="@font/sfpro_medium" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/sfpro_medium"
+                android:text="Payment modes used by vendor"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox_Cash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/sfpro_regular"
+                android:text="Cash"
+                android:textSize="15sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox_Cards"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/sfpro_regular"
+                android:text="Cards"
+                android:textSize="15sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox_Wallets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/sfpro_regular"
+                android:text="Wallets"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/yearsOfVending"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/black_background"
+            android:fontFamily="@font/sfpro_medium"
+            android:hint="Since how many years are you vending?"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:textCursorDrawable="@drawable/text_cursor_cyan"
+            android:textSize="16sp"
+            app:met_baseColor="@color/colorBlack"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="?attr/colorAccent"
+            app:met_textColorHint="@color/colorBlack" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/sfpro_medium"
+                android:text="Differentially abled"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/activitySp_abled"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/abledOptions"
+                android:fontFamily="@font/sfpro_medium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:id="@+id/disability_layout"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/sfpro_medium"
+                android:text="Type of Disability"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/type_disability"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/disabilityOption"
+                android:fontFamily="@font/sfpro_medium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/sfpro_medium"
+                android:text="Can you read and write?"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/readOrWrite"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/abledOptions"
+                android:fontFamily="@font/sfpro_medium" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/sfpro_medium"
+                android:text="Educational Qualification"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/activitySp_qualification"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/educationalOptions" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:id="@+id/linlay_other_qualification"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/sfpro_medium"
+                android:text="Other Qualification"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/other_qualification"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/otherQualification" />
+        </LinearLayout>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/no_of_member"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/black_background"
+            android:fontFamily="@font/sfpro_medium"
+            android:hint="Apart from you, number of earning family members"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:textCursorDrawable="@drawable/text_cursor_cyan"
+            android:textSize="15sp"
+            app:met_baseColor="@color/colorBlack"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="?attr/colorAccent"
+            app:met_textColorHint="@color/colorBlack" />
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/sfpro_medium"
+                android:text="Do you have a bank account?"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/bank_account"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/abledOptions" />
+        </LinearLayout>
+        <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/bank_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/black_background"
+            android:fontFamily="@font/sfpro_medium"
+            android:hint="Bank Name"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:textCursorDrawable="@drawable/text_cursor_cyan"
+            android:textSize="16sp"
+            app:met_baseColor="@color/colorBlack"
+            app:met_floatingLabel="highlight"
+            android:visibility="gone"
+            app:met_primaryColor="?attr/colorAccent"
+            app:met_textColorHint="@color/colorBlack" />
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/branch_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/black_background"
+            android:fontFamily="@font/sfpro_medium"
+            android:hint="Branch Name"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:textCursorDrawable="@drawable/text_cursor_cyan"
+            android:textSize="16sp"
+            app:met_baseColor="@color/colorBlack"
+            app:met_floatingLabel="highlight"
+            android:visibility="gone"
+            app:met_primaryColor="?attr/colorAccent"
+            app:met_textColorHint="@color/colorBlack" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/sfpro_medium"
+                android:text="Are you taking benefit from any govt. scheme?"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/gov_scheme"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/abledOptions" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:id="@+id/type_benefit_layout"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/sfpro_medium"
+                android:text="Type of Benefit"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox_benefit1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/sfpro_regular"
+                android:text="Aayushman Bharat"
+                android:textSize="15sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox_benefit2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/sfpro_regular"
+                android:text="Mudra"
+                android:textSize="15sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox_benefit3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/sfpro_regular"
+                android:text="Rashtriya Swasthya Bima Yojna"
+                android:textSize="15sp" />
+            <CheckBox
+                android:id="@+id/checkBox_benefit4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/sfpro_regular"
+                android:text="Aam aadmi bima yojna"
+                android:textSize="15sp" />
+            <CheckBox
+                android:id="@+id/checkBox_benefit0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/sfpro_regular"
+                android:text="Any Other"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:id="@+id/source_loan_layout"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/sfpro_medium"
+                android:text="Source of Taking Loans"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/source_loan"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/sourceOfLoan" />
+        </LinearLayout>
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/scheme_other_mention"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/black_background"
+            android:fontFamily="@font/sfpro_medium"
+            android:hint="Please mention"
+            android:imeOptions="actionNext"
+            android:layout_margin="10dp"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:textCursorDrawable="@drawable/text_cursor_cyan"
+            android:textSize="16sp"
+            app:met_baseColor="@color/colorBlack"
+            app:met_floatingLabel="highlight"
+            android:visibility="gone"
+            app:met_primaryColor="?attr/colorAccent"
+            app:met_textColorHint="@color/colorBlack" />
+
+        <Button
+            android:id="@+id/form_bt_next"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="bottom|center_vertical|center_horizontal|center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/green_background_rounded"
+            android:gravity="center"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp" />
+    </LinearLayout>
+</ScrollView>

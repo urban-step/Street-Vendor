@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    app:cardCornerRadius="4dp"
+    app:contentPadding="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- youtube thumbnail view to show the thumbnail of videos -->
+        <ImageView
+            android:id="@+id/alert_thumbnail_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/placeholder"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/alert_title_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/alert_thumbnail_image_view"
+            android:text="Click here for details"
+            android:fontFamily="@font/sfpro_semibold"
+            android:textColor="@android:color/black"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

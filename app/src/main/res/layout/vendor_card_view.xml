@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@color/colorLightGray"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="8dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/vendorcard_image"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_centerVertical="true"
+                android:padding="4dp"
+                android:src="@drawable/placeholder" />
+
+            <RelativeLayout
+                android:id="@+id/linlay_vendor_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/vendorcard_image">
+
+                <TextView
+                    android:id="@+id/vendorcard_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sfpro_semibold"
+                    android:textSize="14sp"
+                    android:textAllCaps="true"
+                    android:layout_alignParentStart="true"
+                    android:text="anna raskala muthu "
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/vendorcard_rating"
+                    android:textColor="@color/colorBlack" />
+
+
+                <TextView
+                    android:id="@+id/vendorcard_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="5dp"
+                    android:drawableLeft="@android:drawable/btn_star_big_on"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="5"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/vendorcard_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linlay_vendor_name"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/vendorcard_image"
+                android:text="location of vending vending vending vendingvendingvendingvending"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+            <TextView
+                android:id="@+id/vendorcard_payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vendorcard_location"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/vendorcard_image"
+                android:text="Accept in "
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+            <TextView
+                android:id="@+id/vendorcard_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vendorcard_payment"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/vendorcard_image"
+                android:text="time of vending"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+            <TextView
+                android:id="@+id/vendorcard_licenseno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vendorcard_time"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/vendorcard_image"
+                android:text="license no"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

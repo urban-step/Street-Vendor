@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">TBC</string>
+    <string name="splash_text">WELCOME TO TBC</string>
+    <string name="Open">open</string>
+    <string name="Close">close</string>
+    <string name="today_cash_collected">Today\'s cash collected -</string>
+    <string name="today_s_vendor_registration">Today\'s vendor registration -</string>
+    <string name="total_cash_collected">Total cash collected -</string>
+    <string name="total_vendor_registration">Total vendor registration -</string>
+
+    <string-array name="video_id_array">
+        <item>CqhpNxI8qYw</item>
+        <item>sasCrpgHDy8</item>
+        <item>iJeh3x09Ya8</item>
+        <item>B5zRaD7B504</item>
+        <item>9qWHzj8k-Uo</item>
+        <item>RjiK45wC924</item>
+        <item>RH3zaLO8H4E</item>
+        <item>o14pyzosjvk</item>
+        <item>5SQrpBQne7A</item>
+        <item>5WJ3r67ORxo</item>
+    </string-array>
+
+    <string-array name="video_title_array">
+        <item>Android Security Lock Demo</item>
+        <item>Android Sectioned RecyclerView Demo</item>
+        <item>Android Home Screen Widgets Demo</item>
+        <item>Android Floating Widget like Facebook Messenger Chat Head Demo</item>
+        <item>Android Google Maps Introduction Demo</item>
+        <item>Android Lollipop Activity Transitions Demo</item>
+        <item>Android Toolbar Animation Using Design Support Library Demo</item>
+        <item>Android Material Advance Tabs Demo</item>
+        <item>Android Drag and Drop Demo</item>
+        <item>Android Fingerprint Authentication Demo</item>
+    </string-array>
+</resources>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightGray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Step 3 (Nominee Information)"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp" />
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/name_nominee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/black_background"
+            android:fontFamily="@font/sfpro_medium"
+            android:hint="Name of nominee for license"
+            android:imeOptions="actionNext"
+            android:textCursorDrawable="@drawable/text_cursor_cyan"
+            android:textSize="16sp"
+            app:met_baseColor="@color/colorBlack"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="?attr/colorAccent"
+            app:met_textColorHint="@color/colorBlack" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/relationship_nominee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/black_background"
+            android:fontFamily="@font/sfpro_medium"
+            android:hint="Relationship with nominee"
+            android:imeOptions="actionNext"
+            android:textCursorDrawable="@drawable/text_cursor_cyan"
+            android:textSize="16sp"
+            app:met_baseColor="@color/colorBlack"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="?attr/colorAccent"
+            app:met_textColorHint="@color/colorBlack" />
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/age_nominee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/black_background"
+            android:fontFamily="@font/sfpro_medium"
+            android:hint="Age of nominee "
+            android:imeOptions="actionNext"
+            android:textCursorDrawable="@drawable/text_cursor_cyan"
+            android:textSize="16sp"
+            android:inputType="number"
+            app:met_baseColor="@color/colorBlack"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="?attr/colorAccent"
+            app:met_textColorHint="@color/colorBlack" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/aadhar_nominee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/black_background"
+            android:fontFamily="@font/sfpro_medium"
+            android:hint="Aadhar card no. of nominee "
+            android:imeOptions="actionNext"
+            android:textCursorDrawable="@drawable/text_cursor_cyan"
+            android:textSize="16sp"
+            android:inputType="number"
+            app:met_baseColor="@color/colorBlack"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="?attr/colorAccent"
+            app:met_textColorHint="@color/colorBlack" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/mobile_nominee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/black_background"
+            android:fontFamily="@font/sfpro_medium"
+            android:hint="Mobile no. of nominee "
+            android:imeOptions="actionNext"
+            android:textCursorDrawable="@drawable/text_cursor_cyan"
+            android:textSize="16sp"
+            android:inputType="number"
+            app:met_baseColor="@color/colorBlack"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="?attr/colorAccent"
+            app:met_textColorHint="@color/colorBlack" />
+
+        <Button
+            android:id="@+id/form_bt_next"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="bottom|center_vertical|center_horizontal|center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/green_background_rounded"
+            android:gravity="center"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp" />
+    </LinearLayout>
+</ScrollView>

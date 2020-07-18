@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightGray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Step 1 (Personal Information)"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/vendor_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/black_background"
+            android:fontFamily="@font/sfpro_medium"
+            android:hint="Vendor Name"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:textCursorDrawable="@drawable/text_cursor_cyan"
+            android:textSize="16sp"
+            app:met_baseColor="@color/colorBlack"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="?attr/colorAccent"
+            app:met_textColorHint="@color/colorBlack" />
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/adhar_Card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/black_background"
+            android:fontFamily="@font/sfpro_medium"
+            android:hint="Adhaar Card No."
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:textCursorDrawable="@drawable/text_cursor_cyan"
+            android:textSize="16sp"
+            app:met_baseColor="@color/colorBlack"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="?attr/colorAccent"
+            app:met_textColorHint="@color/colorBlack" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Home Address"
+                android:fontFamily="@font/sfpro_semibold"
+                android:textSize="16sp"
+                android:textColor="@color/colorBlack" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="House no."
+                    android:id="@+id/home_houseno"
+                    android:textCursorDrawable="@drawable/text_cursor_cyan"
+                    app:met_baseColor="@color/colorBlack"
+                    app:met_floatingLabel="highlight"
+                    android:textSize="16sp"
+                    android:imeOptions="actionNext"
+                    android:fontFamily="@font/sfpro_medium"
+                    android:background="@drawable/black_background"
+                    android:layout_margin="10dp"
+                    app:met_textColorHint="@color/colorBlack"
+                    app:met_primaryColor="?colorAccent" />
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Locality"
+                    android:id="@+id/home_locality"
+                    android:textCursorDrawable="@drawable/text_cursor_cyan"
+                    app:met_baseColor="@color/colorBlack"
+                    app:met_floatingLabel="highlight"
+                    android:textSize="16sp"
+                    android:imeOptions="actionNext"
+                    android:fontFamily="@font/sfpro_medium"
+                    android:background="@drawable/black_background"
+                    android:layout_margin="10dp"
+                    app:met_textColorHint="@color/colorBlack"
+                    app:met_primaryColor="?colorAccent" />
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Ward/Zone"
+                    android:id="@+id/home_wardzone"
+                    android:textCursorDrawable="@drawable/text_cursor_cyan"
+                    app:met_baseColor="@color/colorBlack"
+                    app:met_floatingLabel="highlight"
+                    android:textSize="16sp"
+                    android:imeOptions="actionNext"
+                    android:fontFamily="@font/sfpro_medium"
+                    android:background="@drawable/black_background"
+                    android:layout_margin="10dp"
+                    app:met_textColorHint="@color/colorBlack"
+                    app:met_primaryColor="?colorAccent" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/sfpro_medium"
+                        android:text="State"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16sp" />
+
+                    <Spinner
+                        android:id="@+id/home_state"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:drawSelectorOnTop="true"
+                        android:fontFamily="@font/sfpro_medium" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/sfpro_medium"
+                        android:text="City"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16sp" />
+
+                    <Spinner
+                        android:id="@+id/home_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:drawSelectorOnTop="true"
+                        android:fontFamily="@font/sfpro_medium" />
+                </LinearLayout>
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Pin Code"
+                    android:id="@+id/home_pincode"
+                    android:textCursorDrawable="@drawable/text_cursor_cyan"
+                    app:met_baseColor="@color/colorBlack"
+                    app:met_floatingLabel="highlight"
+                    android:textSize="16sp"
+                    android:inputType="number"
+                    android:imeOptions="actionNext"
+                    android:fontFamily="@font/sfpro_medium"
+                    android:background="@drawable/black_background"
+                    android:layout_margin="10dp"
+                    app:met_textColorHint="@color/colorBlack"
+                    app:met_primaryColor="?colorAccent" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/black_background"
+            android:fontFamily="@font/sfpro_medium"
+            android:hint="Age"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:textCursorDrawable="@drawable/text_cursor_cyan"
+            android:textSize="16sp"
+            app:met_baseColor="@color/colorBlack"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="?attr/colorAccent"
+            app:met_textColorHint="@color/colorBlack" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/vendor_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/black_background"
+            android:fontFamily="@font/sfpro_medium"
+            android:hint="Vendor Mobile No"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:textCursorDrawable="@drawable/text_cursor_cyan"
+            android:textSize="16sp"
+            app:met_baseColor="@color/colorBlack"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="?attr/colorAccent"
+            app:met_textColorHint="@color/colorBlack" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Location Of Vending"
+                android:fontFamily="@font/sfpro_semibold"
+                android:textSize="16sp"
+                android:textColor="@color/colorBlack" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Landmark"
+                    android:id="@+id/houseno"
+                    android:textCursorDrawable="@drawable/text_cursor_cyan"
+                    app:met_baseColor="@color/colorBlack"
+                    app:met_floatingLabel="highlight"
+                    android:textSize="16sp"
+                    android:imeOptions="actionNext"
+                    android:fontFamily="@font/sfpro_medium"
+                    android:background="@drawable/black_background"
+                    android:layout_margin="10dp"
+                    app:met_textColorHint="@color/colorBlack"
+                    app:met_primaryColor="?colorAccent" />
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Locality"
+                    android:id="@+id/locality"
+                    android:textCursorDrawable="@drawable/text_cursor_cyan"
+                    app:met_baseColor="@color/colorBlack"
+                    app:met_floatingLabel="highlight"
+                    android:textSize="16sp"
+                    android:imeOptions="actionNext"
+                    android:fontFamily="@font/sfpro_medium"
+                    android:background="@drawable/black_background"
+                    android:layout_margin="10dp"
+                    app:met_textColorHint="@color/colorBlack"
+                    app:met_primaryColor="?colorAccent" />
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Ward/Zone"
+                    android:id="@+id/wardzone"
+                    android:textCursorDrawable="@drawable/text_cursor_cyan"
+                    app:met_baseColor="@color/colorBlack"
+                    app:met_floatingLabel="highlight"
+                    android:textSize="16sp"
+                    android:imeOptions="actionNext"
+                    android:fontFamily="@font/sfpro_medium"
+                    android:background="@drawable/black_background"
+                    android:layout_margin="10dp"
+                    app:met_textColorHint="@color/colorBlack"
+                    app:met_primaryColor="?colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/sfpro_medium"
+                        android:text="State"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16sp" />
+
+                    <Spinner
+                        android:id="@+id/state"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:drawSelectorOnTop="true"
+                        android:entries="@array/commodityOptions"
+                        android:fontFamily="@font/sfpro_medium" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/sfpro_medium"
+                        android:text="City"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16sp" />
+
+                    <Spinner
+                        android:id="@+id/city"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:drawSelectorOnTop="true"
+                        android:entries="@array/commodityOptions"
+                        android:fontFamily="@font/sfpro_medium" />
+                </LinearLayout>
+
+
+
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Pin Code"
+                    android:id="@+id/pincode"
+                    android:inputType="number"
+                    android:textCursorDrawable="@drawable/text_cursor_cyan"
+                    app:met_baseColor="@color/colorBlack"
+                    app:met_floatingLabel="highlight"
+                    android:textSize="16sp"
+                    android:imeOptions="actionNext"
+                    android:fontFamily="@font/sfpro_medium"
+                    android:background="@drawable/black_background"
+                    android:layout_margin="10dp"
+                    app:met_textColorHint="@color/colorBlack"
+                    app:met_primaryColor="?colorAccent" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Location of Vending"
+                    android:id="@+id/registration_locationOfVendingGps"
+                    android:textCursorDrawable="@drawable/text_cursor_cyan"
+                    app:met_baseColor="@color/colorBlack"
+                    app:met_floatingLabel="highlight"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorBlack"
+                    android:imeOptions="actionNext"
+                    android:drawableRight="@drawable/gps"
+                    android:fontFamily="@font/sfpro_medium"
+                    android:background="@drawable/black_background"
+                    android:layout_margin="10dp"
+                    app:met_textColorHint="@color/colorBlack"
+                    app:met_primaryColor="?colorAccent" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/sfpro_medium"
+                android:text="Type of Commodity Sold"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp" />
+
+            <com.multispinner.MultiSelectSpinner
+                android:id="@+id/activitySp_commodity"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:drawSelectorOnTop="true"
+                android:fontFamily="@font/sfpro_medium" />
+        </LinearLayout>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/please_mention"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/black_background"
+            android:fontFamily="@font/sfpro_medium"
+            android:hint="Please mention"
+            android:imeOptions="actionNext"
+            android:layout_margin="10dp"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:textCursorDrawable="@drawable/text_cursor_cyan"
+            android:textSize="16sp"
+            app:met_baseColor="@color/colorBlack"
+            app:met_floatingLabel="highlight"
+            android:visibility="gone"
+            app:met_primaryColor="?attr/colorAccent"
+            app:met_textColorHint="@color/colorBlack" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/sfpro_medium"
+                android:text="Timming of Vending"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox_6am"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/sfpro_regular"
+                android:text="6am - 9am"
+                android:textSize="15sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linlay_nature_6am"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="15dp"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/sfpro_medium"
+                    android:text="Nature of Vending"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp" />
+
+                <com.multispinner.MultiSelectSpinner
+                    android:id="@+id/activitySp_nature_6am"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    />
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/checkBox_9am"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/sfpro_regular"
+                android:text="9am - 12pm"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linlay_nature_9am"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="15dp"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/sfpro_medium"
+                    android:text="Nature of Vending"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp" />
+
+                <com.multispinner.MultiSelectSpinner
+                    android:id="@+id/activitySp_nature_9am"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                  />
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/checkBox_12pm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/sfpro_regular"
+                android:text="12pm - 3pm"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linlay_nature_12pm"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="15dp"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/sfpro_medium"
+                    android:text="Nature of Vending"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp" />
+
+                <com.multispinner.MultiSelectSpinner
+                    android:id="@+id/activitySp_nature_12pm"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    />
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/checkBox_3pm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/sfpro_regular"
+                android:text="3pm - 6pm"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linlay_nature_3pm"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="15dp"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/sfpro_medium"
+                    android:text="Nature of Vending"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp" />
+
+                <com.multispinner.MultiSelectSpinner
+                    android:id="@+id/activitySp_nature_3pm"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+
+                     />
+            </LinearLayout>
+            <CheckBox
+                android:id="@+id/checkBox_6pm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/sfpro_regular"
+                android:text="6pm - 9pm"
+                android:textSize="15sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linlay_nature_6pm"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="15dp"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/sfpro_medium"
+                    android:text="Nature of Vending"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp" />
+
+                <com.multispinner.MultiSelectSpinner
+                    android:id="@+id/activitySp_nature_6pm"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:drawSelectorOnTop="true"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/form_bt_next"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="bottom|center_vertical|center_horizontal|center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/green_background_rounded"
+            android:gravity="center"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp" />
+    </LinearLayout>
+</ScrollView>
